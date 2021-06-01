@@ -2,6 +2,7 @@ import { createGlobalStyle } from 'styled-components';
 import { normalize } from 'styled-normalize';
 import PangramLight from './assets/fonts/Pangram-Light.woff2';
 import PangramRegular from './assets/fonts/Pangram-Regular.woff2';
+import SnellRound from './assets/fonts/SnellBT-Regular.otf';
 
 const GlobalStyle = createGlobalStyle`
   @font-face{
@@ -14,6 +15,12 @@ const GlobalStyle = createGlobalStyle`
     font-family: Pangram-Regular;
     src: url(${PangramRegular});
     font-style: normal;
+    font-display: swap;
+  }
+  @font-face{
+    font-family: Snell;
+    src:url(${SnellRound});
+    font-style:normal;
     font-display: swap;
   }
     ${normalize}
@@ -33,6 +40,7 @@ const GlobalStyle = createGlobalStyle`
       --primary-black: #000000;
       --primary-font: Pangram, sans-serif;
       --regular-font: Pangram-Regular, sans-serif;
+      --snell-font: Snell, sans-serif;
     }
 
     html, body {

@@ -26,17 +26,23 @@ const foodData = [
     }
 ]
 
-const Seasonal = ({onOpen}) => {
+const Seasonal = () => {
     return (
         <SeasonalContainer>
         <p className="header"><span>~</span>Seasonal Special<span>~</span></p>
             <p className="sub-header">Fresh products paired with excellent...</p>
             <div className="menu-section">
                 {
-                    foodData.map((foodItem ,index)=> <span key={index} onClick={onOpen}><FoodCard foodImage={foodItem.foodImage} foodContent={foodItem.foodContent} foodTitle={foodItem.foodTitle} foodPrice={foodItem.foodPrice}/></span>)
+                    foodData.map((foodItem ,index)=> <span key={index} >
+                        <FoodCard
+                            foodImage={foodItem.foodImage}
+                            foodContent={foodItem.foodContent}
+                            foodTitle={foodItem.foodTitle}
+                            foodPrice={foodItem.foodPrice}
+                        />
+                    </span>)
                 }
             </div>
-
         </SeasonalContainer>
     );
 };

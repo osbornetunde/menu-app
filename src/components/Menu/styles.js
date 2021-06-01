@@ -18,6 +18,7 @@ const MenuContainer = styled.div`
       letter-spacing: 0.03em;
       text-align: left;
       margin-bottom: 1.5rem;
+      color: #AF1601;
     }
   .menu-container{
     margin-top:1rem;

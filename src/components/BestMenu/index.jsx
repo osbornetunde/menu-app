@@ -246,12 +246,12 @@ const menu = [{
     }
 ]
 
-const BestMenu = () => {
+const BestMenu = ({onOpen}) => {
     return (
         <BestMenuContainer>
             <p className="header"><span>~</span>Seasonal Special<span>~</span></p>
             <p className="sub-header">Fresh products paired with excellent...</p>
-            <Menu menu={menu}/>
+            <Menu menu={menu} onOpen={onOpen}/>
         </BestMenuContainer>
     );
 };

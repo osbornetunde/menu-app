@@ -16,8 +16,8 @@ const HomePage = () => {
         <HomePageContainer>
             <Hero/>
             <Specialize/>
-            <Seasonal onOpen={onOpen}/>
-            <BestMenu/>
+            <Seasonal />
+            <BestMenu onOpen={onOpen}/>
             <Reservation/>
             <Footer/>
         </HomePageContainer>
